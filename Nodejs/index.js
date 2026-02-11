@@ -60,3 +60,15 @@
 //     const obj=JSON.parse(data);
 //     console.log(obj.name);
 // });
+
+//      OS
+
+const os=require('os');
+/* console.log("Platform : ",os.platform());
+console.log("User name",os.userInfo());
+console.log("CUP",os.arch());*/
+// console.log("Free memory : ",os.freemem())
+// console.log("Total memory : ",os.totalmem())
+// console.log("Uptime",os.uptime());
+console.log("Home dir : ",os.homedir());
+
