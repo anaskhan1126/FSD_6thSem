@@ -70,5 +70,6 @@ console.log("CUP",os.arch());*/
 // console.log("Free memory : ",os.freemem())
 // console.log("Total memory : ",os.totalmem())
 // console.log("Uptime",os.uptime());
-console.log("Home dir : ",os.homedir());
+// console.log("Home dir : ",os.homedir())
+console.log("Host name : ",os.hostname());
 
