@@ -1,7 +1,14 @@
-// const http=require('http');
-// const myserver=http.createServer((req,res)=>{
-// //    console.log('server1');
-// //    res.end('Hii This is my first server');
+const http=require('http');
+const fs=require("fs");
+     const home=fs.readFileSync('abes.html')
+const myserver=http.createServer((req,res)=>{
+      res.statusCode=200;
+    //   res.setHeader('content-type','text/plain');
+    res.end(home);
+ 
+    //   res.end("hello world");
+//    console.log('server1');
+//    res.end('Hii This is my first server');
 //     if(req.url=='/'){
 //         res.end(`<h1>ABES ENGINEERING COLLEGE</h1>
      
@@ -16,8 +23,8 @@
 //     else{
 //         res.end("404 page is not found")
 //     }
-// });
-// myserver.listen(8000,()=>console.log('server is running'))
+});
+myserver.listen(8000,()=>console.log('server is running'))
 
 //   Sync
 // const fs=require('fs');
@@ -63,7 +70,7 @@
 
 //      OS
 
-const os=require('os');
+// const os=require('os');
 /* console.log("Platform : ",os.platform());
 console.log("User name",os.userInfo());
 console.log("CUP",os.arch());*/
@@ -71,5 +78,7 @@ console.log("CUP",os.arch());*/
 // console.log("Total memory : ",os.totalmem())
 // console.log("Uptime",os.uptime());
 // console.log("Home dir : ",os.homedir())
-console.log("Host name : ",os.hostname());
+// console.log("Host name : ",os.hostname());
+
+
 
